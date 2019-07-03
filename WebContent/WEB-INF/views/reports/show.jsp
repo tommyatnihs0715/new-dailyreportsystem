@@ -18,9 +18,15 @@
                             <td><fmt:formatDate value='${report.report_date}' pattern='yyyy-MM-dd' /></td>
                         </tr>
                         <tr>
-                            <th>内容</th>
+                            <th>実績</th>
                             <td>
-                                <pre><c:out value="${report.content}" /></pre>
+                                <pre><c:out value="${report.performance}" /></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>学び/感想</th>
+                            <td>
+                                <pre><c:out value="${report.impression}" /></pre>
                             </td>
                         </tr>
                         <tr>
