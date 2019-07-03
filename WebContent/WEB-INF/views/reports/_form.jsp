@@ -22,8 +22,12 @@
 <input type="text" name="title" value="${report.title}" />
 <br /><br />
 
-<label for="content">内容</label><br />
-<textarea name="content" rows="10" cols="50">${report.content}</textarea>
+<label for="performance">実績</label><br />
+<textarea name="performance" rows="10" cols="50">${report.performance}</textarea>
+<br /><br />
+
+<label for="impression">学び/感想</label><br />
+<textarea name="impression" rows="10" cols="50">${report.impression}</textarea>
 <br /><br />
 
 <input type="hidden" name="_token" value="${_token}" />
