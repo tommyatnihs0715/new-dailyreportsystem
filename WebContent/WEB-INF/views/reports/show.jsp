@@ -30,6 +30,15 @@
                             </td>
                         </tr>
                         <tr>
+                            <th>緊急度</th>
+                            <td>
+                                <c:choose>
+                                    <c:when test="${report.urgency == 1}">通常</c:when>
+                                    <c:otherwise>緊急！</c:otherwise>
+                                </c:choose>
+                            </td>
+                        </tr>
+                        <tr>
                             <th>登録日時</th>
                             <td>
                                 <fmt:formatDate value="${report.created_at}" pattern="yyyy-MM-dd HH:mm:ss" />

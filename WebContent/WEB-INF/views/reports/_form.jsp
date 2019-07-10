@@ -32,8 +32,8 @@
 
 <label for="urgency">緊急度</label><br />
 <select name="urgency">
-    <option value="0"<c:if test="${employee.admin_flag == 0}"> selected</c:if>>通常</option>
-    <option value="1"<c:if test="${employee.admin_flag == 1}"> selected</c:if>>緊急！</option>
+    <option value="0"<c:if test="${report.urgency == 0}"> selected</c:if>>通常</option>
+    <option value="1"<c:if test="${report.urgency == 1}"> selected</c:if>>緊急！</option>
 </select>
 <br /><br />
 
