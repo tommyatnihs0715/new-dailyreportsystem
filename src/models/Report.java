@@ -52,8 +52,14 @@ public class Report {
     private String title;
 
     @Lob
-    @Column(name = "content", nullable = false)
-    private String content;
+    @Column(name = "performance", nullable = false)
+    private String performance;
+
+    @Column(name = "impression", nullable = false)
+    private String impression;
+
+    @Column(name = "urgency", nullable = false)
+    private String urgency;
 
     @Column(name = "created_at", nullable = false)
     private Timestamp created_at;
@@ -93,12 +99,28 @@ public class Report {
         this.title = title;
     }
 
-    public String getContent() {
-        return content;
+    public String getPerformance() {
+        return performance;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setPerformance(String performance) {
+        this.performance = performance;
+    }
+
+    public String getImpression() {
+        return impression;
+    }
+
+    public void setImpression(String impression) {
+        this.impression = impression;
+    }
+
+    public String getUrgency() {
+        return urgency;
+    }
+
+    public void setUrgency(String urgency) {
+        this.urgency = urgency;
     }
 
     public Timestamp getCreated_at() {

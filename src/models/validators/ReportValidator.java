@@ -14,9 +14,14 @@ public class ReportValidator {
             errors.add(title_error);
         }
 
-        String content_error = _validateContent(r.getContent());
-        if(!content_error.equals("")) {
-            errors.add(content_error);
+        String performance_error = _validatePerformance(r.getPerformance());
+        if(!performance_error.equals("")) {
+            errors.add(performance_error);
+        }
+
+        String impression_error = _validateImpression(r.getImpression());
+        if(!impression_error.equals("")) {
+            errors.add(impression_error);
         }
 
         return errors;
@@ -30,11 +35,20 @@ public class ReportValidator {
         return "";
     }
 
-    private static String _validateContent(String content) {
-        if(content == null || content.equals("")) {
-            return "内容を入力してください。";
+    private static String _validatePerformance(String performance) {
+        if(performance == null || performance.equals("")) {
+            return "実績を入力してください。";
             }
 
         return "";
     }
+
+    private static String _validateImpression(String impression) {
+        if(impression == null || impression.equals("")) {
+            return "今日の学び/感想を入力してください。";
+            }
+
+        return "";
+    }
+
 }
